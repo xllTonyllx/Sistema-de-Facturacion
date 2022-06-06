@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Package.Factura">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="671" height="634"/>
+      <xy x="20" y="20" width="634" height="479"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="1fa6c" class="javax.swing.JLabel" binding="Cantidad" custom-create="true">
+      <component id="ea434" class="javax.swing.JLabel" binding="Cantidad">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Cantidad"/>
         </properties>
       </component>
-      <component id="e3d09" class="javax.swing.JLabel" binding="Producto" custom-create="true">
+      <component id="7987e" class="javax.swing.JLabel" binding="Producto">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -24,7 +24,7 @@
           <text value="Producto"/>
         </properties>
       </component>
-      <component id="a6b44" class="javax.swing.JLabel" binding="Precio_Unitario" custom-create="true">
+      <component id="3991b" class="javax.swing.JLabel" binding="Precio_Unitario">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -32,120 +32,159 @@
           <text value="Precio Unitario"/>
         </properties>
       </component>
-      <component id="2b7b5" class="javax.swing.JLabel" binding="Subtotal" custom-create="true">
+      <component id="a99f9" class="javax.swing.JTextField" binding="P_Unit1">
         <constraints>
-          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
         </constraints>
         <properties>
-          <text value="Subtotal"/>
+          <horizontalAlignment value="0"/>
         </properties>
       </component>
-      <component id="8a145" class="javax.swing.JTextField" binding="calculoIGV" custom-create="true">
+      <component id="b0e4e" class="javax.swing.JTextField" binding="Prod1">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="6780f" class="javax.swing.JTextField" binding="Cant1">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="5ac33" class="javax.swing.JLabel" binding="Importe">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Importe"/>
+        </properties>
+      </component>
+      <component id="337b4" class="javax.swing.JTextField" binding="Imp1">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="41685" class="javax.swing.JTextField" binding="Imp2">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="7dada" class="javax.swing.JTextField" binding="calculoSubtotal">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <editable value="false"/>
+          <horizontalAlignment value="0"/>
+        </properties>
       </component>
-      <component id="d1232" class="javax.swing.JTextField" binding="Cant1" custom-create="true">
+      <component id="b7fd2" class="javax.swing.JTextField" binding="calculoIGV">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <text value=""/>
+          <editable value="false"/>
+          <horizontalAlignment value="0"/>
         </properties>
       </component>
-      <component id="da2ba" class="javax.swing.JTextField" binding="Cant2" custom-create="true">
+      <component id="fb7a8" class="javax.swing.JTextField" binding="calculoTotal">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="600c1" class="javax.swing.JTextField" binding="P_Unit2">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="4852e" class="javax.swing.JTextField" binding="Prod2">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="d1dc6" class="javax.swing.JTextField" binding="Cant2">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <text value=""/>
+          <horizontalAlignment value="0"/>
         </properties>
       </component>
-      <component id="5e086" class="javax.swing.JTextField" binding="Prod1" custom-create="true">
+      <component id="9a53" class="javax.swing.JButton" binding="calcularTotal">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="4bc9e" class="javax.swing.JTextField" binding="Prod2" custom-create="true">
-        <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="cf65e" class="javax.swing.JTextField" binding="P_Unit1" custom-create="true">
-        <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="8db39" class="javax.swing.JTextField" binding="P_Unit2" custom-create="true">
-        <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="51bc2" class="javax.swing.JTextField" binding="Subtotal1" custom-create="true">
-        <constraints>
-          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="2a26e" class="javax.swing.JTextField" binding="Subtotal2" custom-create="true">
-        <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="476f" class="javax.swing.JButton" binding="calcularButton" custom-create="true" default-binding="true">
-        <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Calcular"/>
         </properties>
       </component>
-      <component id="4127f" class="javax.swing.JLabel" binding="Total">
-        <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Total"/>
-        </properties>
-      </component>
-      <component id="33759" class="javax.swing.JTextField" binding="calculoTotal" custom-create="true">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="d1b4e" class="javax.swing.JLabel" binding="IGV">
+      <component id="1e30e" class="javax.swing.JLabel" binding="Subtotal">
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <text value="Subtotal"/>
+        </properties>
+      </component>
+      <component id="441b2" class="javax.swing.JLabel" binding="IGV">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
           <text value="IGV"/>
+        </properties>
+      </component>
+      <component id="dcfd0" class="javax.swing.JLabel" binding="Total">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Total"/>
         </properties>
       </component>
     </children>
